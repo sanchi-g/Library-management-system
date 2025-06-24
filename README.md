@@ -2,6 +2,8 @@ Library Management System
 
 A SQL-based Library Management System designed to simulate the operations of a real-world library. It includes comprehensive features for managing books, customers, employees, and book issuance records.
 
+---
+
 Features
 
 - Manage books with availability status and pricing
@@ -23,10 +25,10 @@ Features
 SQL Queries
 
 
-1. to show all Available books
-2. to show details of books currently issued
-3. to List all books with their availability status
-4.To Show how many books each customer has issued
+1. To show all Available books
+2. To show details of books currently issued
+3. To List all books with their availability status
+4. To Show how many books each customer has issued
 
 ---
 
