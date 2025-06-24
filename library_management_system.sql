@@ -1,5 +1,6 @@
 CREATE DATABASE library_db;
 USE library_db;
+
 CREATE TABLE Books (
     BookID INT PRIMARY KEY,
     Title VARCHAR(255),
@@ -34,6 +35,7 @@ CREATE TABLE IssuedBooks (
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
     FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
+
 INSERT INTO Employees VALUES
 (201, 'Karan Malhotra', 'Librarian', '9901122334'),
 (202, 'Meena Gupta', 'Assistant', '8809988776'),
@@ -50,6 +52,7 @@ INSERT INTO Employees VALUES
 (213, 'Priya Das', 'Receptionist', '9013233445'),
 (214, 'Rohit Kumar', 'Security', '9023344556'),
 (215, 'Ananya Roy', 'Maintenance', '9033455667');
+
 INSERT INTO Customers VALUES
 (101, 'Riya Sharma', '9876543210', 'riya@example.com'),
 (102, 'Aman Verma', '9812345678', 'aman@example.com'),
@@ -96,6 +99,7 @@ INSERT INTO IssuedBooks VALUES
 
 SELECT * FROM issuedbooks;
 
+#sample queries
 # 1. To Show all available books
 SELECT * FROM Books WHERE Available = TRUE;
 
